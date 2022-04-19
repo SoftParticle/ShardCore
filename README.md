@@ -14,8 +14,9 @@ If you wanted to store, let's say, products information we would create a Produc
 This repository will make use of the previously mentioned **ShardInformationRepository** and **GenericRepository**, to resolve the correct shard, and store/retrieve the information respectively. Using the previous example, if you wanted to store products information in multiple database shards you would create a ProductsShardedRepository class that inherits from a GenericShardedRepository\<T,R\> class, where T is of type Product and R is of type GenericRepository\<T\>.
   
 ## Installation
-You can install ShardCore by running the following command in the Package Manager Console:
+You can install the latest ShardCore version by running the following command in the Package Manager Console:
 
+```Install-Package Particle.ShardCore```
 
 ## Setup
 Using ShardCore requires taking the following steps:
@@ -403,4 +404,7 @@ Indexing is very important for database searches, this is particularly true for 
 Pay a lot of attention to which columns will be used to search for information, and by which order, and add the respective indexes.
 
 ### Example Project
-We have an example project with everything you need to know to start using ShardCore, you can find it here.
+We have an example project with everything you need to know to start using ShardCore, you can find it [here](https://github.com/SoftParticle/ShardCoreTest).
+
+## Pricing and Availability
+ShardCore can be used up to three shards for free, if you require more shards please contact us at our business email on the profile page for pricing and availability.
