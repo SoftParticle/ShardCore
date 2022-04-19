@@ -115,6 +115,11 @@ public class ShardDbContext : DbContext
 {
     private readonly string connectionString;
 
+    // This constructor is required to prevent an exception in bulk operations.
+    public ShardDbContext() : base()
+    {
+    }
+    
     public ShardDbContext(string connectionString) : base()
     {
         this.connectionString = connectionString;
