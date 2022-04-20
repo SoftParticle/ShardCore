@@ -394,14 +394,14 @@ public class Program
 ## Important Notes
 
 ### Linked Servers
-If you are using shards in different servers you have to configure them as linked servers. You can read how to configure linked servers [here](https://docs.microsoft.com/en-us/sql/relational-databases/linked-servers/create-linked-servers-sql-server-database-engine?view=sql-server-ver15).
+If you are using shards in different servers you have to configure them as linked servers. You can read on how to configure linked servers [here](https://docs.microsoft.com/en-us/sql/relational-databases/linked-servers/create-linked-servers-sql-server-database-engine?view=sql-server-ver15).
 
 One shard must be able to query any other shard using the following synthax.
 
 ```
 select * from [ServerName].[DatabaseName].[DatabaseSchema].TableName with (nolock)
 ```
-If all your shards are in the same servers this isn't required.
+If all your shards are in the same server this isn't required.
 
 ### Indexing
 Indexing is very important for database searches, this is particularly true for sharded databases.
