@@ -1,6 +1,6 @@
 # ShardCore
 ShardCore is a library that provides horizontal sharding functionality based on EntityFramework Core. 
-It allows developers to abstract from the complexity of storing and retrieving information to or from multiple database shards using a normal repository class.
+It allows developers to abstract from the complexity of storing and retrieving information, to or from multiple database shards, using a normal repository class.
 
 ## Glossary
 To better understand how to use ShardCore we start by defining a few terms.
